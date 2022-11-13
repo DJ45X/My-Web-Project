@@ -4,62 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Demo</title>
+    <title>DJ's Bootstrap Demo</title>
     <link rel="icon" href="Assets/img/bootstrap_icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/Styles/style.css">
     <script src="script.js"></script>
 </head>
 
-
 <body>
-    <div class="container-fluid pt-4 bg-dark text-white">
-        <div class="row justify-content-lg-between">
-
+    <div class="container-fluid pt-4 bg-dark text-white" id="mainHead">
+        <div class="row justify-content-lg-center">
             <div class="col-6">
                 <h1 id="mainTitle">DJ's First Bootstrap Project</h1>
-                <p id="titlePara">Welcome! This page is to showcase what I've learned in bootstrap!</p>
-            </div>
-
-            <div class="col-sm-2 ">
-                <img src="Assets/img/CAG_LogoIcon_WithText_Md.png" alt="CAG Logo" id="cagLogo">
             </div>
         </div> 
     </div>
 
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-sm-1 offset-6">
-                <a href="https://discord.gg/88TDP6F"><img src="src/img/372108630_DISCORD_LOGO_400.gif" alt="Discord Invite" id="discordIcon"></a>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pages/signup.html">Missions Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pages/about.html">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="indexCarousel" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/img/Screen_220730_093559.png" alt="Internal Cockpit" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/img/vlc_WBOXhlitkm.jpg" alt="F-16 Bombing" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/img/Screen_220730_092153.png" alt="Carrier Catapult" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/img/unknown.png" alt="Formation" class="d-block w-100">
             </div>
         </div>
-    </div> -->
 
-    <div class="container-fluid" id="signupSheet">
-        <iframe src="https://docs.google.com/spreadsheets/d/1Vc3BxomwCDyxGOwwIfkGcNYqtclNIcVOPCEcWYLUqTk/edit?usp=sharing" style="width: 2525px; height:1000px"></iframe>
+        <button class="carousel-control-prev" type="button" data-bs-target="#indexCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#indexCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
     </div>
+    <br>
 
-    <!-- <div class="container-fluid" id="discordIframe">
-        <iframe src="https://discord.com/widget?id=635557533267918890&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Welcome to my page!</h2>
+                <p>This is my page to showcase my journey to becoming a web developer. I have a solid knowledge with HTML and CSS, and I'm currently learning Bootstrap 5! Eventually, I'd like to incorporate what I've learned and transition to React.JS. Please feel free to look around!</p>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
     <!-- <footer>
-        <div class="container-fluid P-5 bg-dark text-white" id="footer">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4>ABOUT</h4>
-                    <p>Central Arkansas Gaming is a community of players from all over the world. We play a myriad of games from Genshin Impact, CoD, and Elite: Dangerous, to DCS World, Microsoft Flight Simulator, and Falcom: BMS. Feel free to join us in the comraderie and shenanigans!</p>
-                </div>
-                <div class="col-sm-2 offset-sm-1">
-                    <h4>CATEGORIES</h4>
-                </div>
-                <div class="col-sm-2 offset-sm-1">
-                    <h4>QUICK LINKS</h4>
-                </div>
-            </div>
-        </div>
     </footer> -->
 </body>
 </html>
