@@ -1,3 +1,7 @@
+body {
+    background-color: #212529;
+}
+
 #indexCarousel {
     max-width: 1000px;
     max-height: 800px;
@@ -11,6 +15,15 @@
 #titlePara {
     text-align: center;
 }
+
+#signupIframe {
+    width: 1300px;
+    height: 1110px;
+}
+
+/* #signupBody {
+    background-color: black;
+} */
 
 /* #footer {
     height: 150px;
