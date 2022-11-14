@@ -1,17 +1,27 @@
+/* 
+Color Palette: 
+BG-Color = #212529
+welcomeColumn BG-Color = #212529
+*/
+
 body {
     background-color: #212529;
 }
 
 #indexCarousel {
     max-width: 1000px;
-    max-height: 800px;
+    max-height: 1000px;
     margin-left: auto;
     margin-right: auto;
-    
+}
+
+#carouselInner {
+	border-radius: 34px;
 }
 
 #mainTitle {
     text-align: center;
+	color: #E0F2E9;
 }
 
 #titlePara {
@@ -21,11 +31,21 @@ body {
 #signupIframe {
     width: 1300px;
     height: 1110px;
+	margin-left: auto;
+	margin-right: auto;
+
+	border-radius: 35px;
+	box-shadow: 5px 5px 5px #8f7f93, -5px -5px 21px #ab99af	
 }
 
-/* #signupBody {
-    background-color: black;
-} */
+#welcomeColumn {
+	border-radius: 44px;
+	background: linear-gradient(145deg, #8d7e91, #a896ac);
+	box-shadow:  5px 5px 21px #8f7f93,-5px -5px 21px #ab99af;
+	text-align: center;
+	color: #E0F2E9;
+	font-size: 25px;
+}
 
 /* #footer {
     height: 150px;
